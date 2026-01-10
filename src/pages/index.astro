@@ -1,0 +1,265 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Footer from '../components/Footer.astro';
+
+const siteTitle = 'Praktijk Inner';
+const siteDescription =
+  'Een rustige, moderne praktijkwebsite met statische content en een eenvoudig contactformulier.';
+---
+
+<BaseLayout title={siteTitle} description={siteDescription}>
+  <div class="min-h-screen">
+    <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="#contact" />
+
+    <!-- HERO -->
+    <section class="relative pt-10 pb-10 sm:pt-16 sm:pb-14">
+      <Container>
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div class="text-center lg:text-left">
+            <p class="font-serif text-4xl leading-tight sm:text-5xl sm:leading-tight">
+              Rustige begeleiding voor mensen die weer ruimte willen voelen.
+            </p>
+
+            <p class="mx-auto mt-5 max-w-xl text-base leading-7 text-ink/70 lg:mx-0">
+              Praktijk Inner biedt een veilige plek om te vertragen, te ordenen en stappen te zetten die
+              passen bij jou.
+            </p>
+
+            <div class="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+              <Button href="#contact" variant="solid">Kennismaking aanvragen</Button>
+              <Button href="#aanbod" variant="ghost">Bekijk het aanbod</Button>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-10 bottom-10 hidden h-40 w-40 overflow-hidden rounded-[48px] bg-white/60 shadow-soft ring-1 ring-taupe/20 lg:block">
+              <img src="/images/circle-placeholder.svg" alt="" class="h-full w-full object-cover opacity-70" />
+            </div>
+
+            <div class="overflow-hidden rounded-[72px] bg-white/60 shadow-soft ring-1 ring-taupe/20">
+              <img
+                src="/images/hero-placeholder.svg"
+                alt="Sfeervolle foto placeholder"
+                class="h-[420px] w-full object-cover sm:h-[520px]"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- FEATURED IN -->
+    <section class="py-10">
+      <Container>
+        <div class="rounded-[48px] bg-white/35 ring-1 ring-taupe/15 px-6 py-10 sm:px-10">
+          <p class="text-center text-xs tracking-[0.14em] text-ink/60 uppercase">Uitgelicht in</p>
+          <div class="mt-8 grid grid-cols-2 gap-6 text-center font-serif text-4xl text-ink/35 sm:grid-cols-4">
+            <div>Logo</div>
+            <div>logo</div>
+            <div>logo</div>
+            <div>LOGO</div>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- OFFERING -->
+    <section id="aanbod" class="py-14">
+      <Container>
+        <p class="mx-auto max-w-3xl text-center font-serif text-3xl leading-snug sm:text-4xl">
+          Bij Praktijk Inner zien we de vrouw achter de klacht.
+        </p>
+
+        <div class="mt-12 grid gap-10 lg:grid-cols-3">
+          <ServiceCard
+  title="Acceptance and Commitment Therapy (ACT)"
+  body="ACT helpt om op een nieuwe manier om te gaan met moeilijke gedachten en gevoelens."
+  buttonLabel="Lees verder"
+  href="/behandelvormen#act"
+  imageSrc="/images/circle-placeholder.svg"
+  imageAlt=""
+/>
+
+<ServiceCard
+  title="Eye Movement Desensitization and Reprocessing (EMDR)"
+  body="Soms blijft een ingrijpende gebeurtenis vastzitten, alsof die zich telkens opnieuw afspeelt."
+  buttonLabel="Lees verder"
+  href="/behandelvormen#emdr"
+  imageSrc="/images/circle-placeholder.svg"
+  imageAlt=""
+/>
+
+<ServiceCard
+  title="Cognitieve gedragstherapie (CGT)"
+  body="Gedachten, gevoelens en gedragingen beïnvloeden elkaar voortdurend, als schakels in een keten."
+  buttonLabel="Lees verder"
+  href="/behandelvormen#cgt"
+  imageSrc="/images/circle-placeholder.svg"
+  imageAlt=""
+/>
+
+        </div>
+      </Container>
+    </section>
+
+    <!-- QUOTE / STATEMENT -->
+    <section class="relative py-16">
+      <div class="absolute inset-0 -z-10">
+        <img src="/images/bg-soft.svg" alt="" class="h-full w-full object-cover" />
+      </div>
+
+      <Container>
+        <div class="mx-auto max-w-4xl rounded-[56px] bg-white/70 px-8 py-12 shadow-soft ring-1 ring-taupe/15 sm:px-14">
+          <p class="text-center font-serif text-2xl leading-relaxed sm:text-3xl">
+            “Zelfs als het nu ingewikkeld voelt, kunnen dingen weer lichter worden — stap voor stap.”
+          </p>
+
+          <div class="mt-8 flex justify-center">
+            <Button href="#contact" variant="solid">Kennismaking aanvragen</Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="over" class="py-16">
+      <Container>
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div class="order-2 lg:order-1">
+            <h2 class="font-serif text-4xl">Over Praktijk Inner</h2>
+            <p class="mt-4 text-base leading-7 text-ink/70">
+              Dit is een plek voor jouw verhaal. Met rust, warmte en duidelijke stappen. Vervang deze tekst
+              straks door jouw eigen introductie, werkwijze en specialisaties.
+            </p>
+
+            <ul class="mt-6 space-y-3 text-ink/70">
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-taupe"></span>Heldere aanpak, zonder poespas</li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-taupe"></span>Online of op locatie (jouw keuze)</li>
+              <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-taupe"></span>Focus op rust, grenzen en richting</li>
+            </ul>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="overflow-hidden rounded-[72px] bg-white/60 shadow-soft ring-1 ring-taupe/20">
+              <img src="/images/hero-placeholder.svg" alt="Foto placeholder" class="h-[380px] w-full object-cover sm:h-[460px]" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- PRICING -->
+    <section id="tarieven" class="py-14">
+      <Container>
+        <div class="rounded-[48px] bg-white/50 ring-1 ring-taupe/15 px-8 py-10 sm:px-12">
+          <h2 class="font-serif text-3xl sm:text-4xl">Tarieven</h2>
+          <p class="mt-4 max-w-3xl text-ink/70">
+            Houd dit simpel: één of twee tarieven en korte voorwaarden. Dit is statische content (SEO-vriendelijk).
+          </p>
+
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <div class="rounded-3xl bg-paper/60 p-6 ring-1 ring-taupe/15">
+              <p class="text-xs tracking-[0.14em] uppercase text-ink/60">Kennismaking</p>
+              <p class="mt-2 font-serif text-3xl">€ 0</p>
+              <p class="mt-2 text-sm text-ink/70">15 min, telefonisch of online.</p>
+            </div>
+            <div class="rounded-3xl bg-paper/60 p-6 ring-1 ring-taupe/15">
+              <p class="text-xs tracking-[0.14em] uppercase text-ink/60">Sessie</p>
+              <p class="mt-2 font-serif text-3xl">€ 95</p>
+              <p class="mt-2 text-sm text-ink/70">60 min. Factuur mogelijk.</p>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16">
+      <Container>
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div>
+            <h2 class="font-serif text-4xl">Contact</h2>
+            <p class="mt-4 max-w-xl text-ink/70">
+              Vul het formulier in en je ontvangt binnen 1–2 werkdagen een reactie.
+              Dit formulier werkt platform-onafhankelijk via Formspree.
+            </p>
+
+            <div class="mt-6 space-y-2 text-sm text-ink/70">
+              <p><span class="text-ink/90">E-mail:</span> info@praktijkinner.nl</p>
+              <p><span class="text-ink/90">Locatie:</span> Nederland (online mogelijk)</p>
+            </div>
+          </div>
+
+          <div class="rounded-[48px] bg-white/60 p-8 shadow-soft ring-1 ring-taupe/15 sm:p-10">
+            <form
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              class="space-y-5"
+            >
+              <!-- Honeypot (spam) -->
+              <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div>
+                <label class="text-sm text-ink/70" for="name">Naam</label>
+                <input
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-2 w-full rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                  placeholder="Jouw naam"
+                />
+              </div>
+
+              <div>
+                <label class="text-sm text-ink/70" for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  class="mt-2 w-full rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                  placeholder="naam@voorbeeld.nl"
+                />
+              </div>
+
+              <div>
+                <label class="text-sm text-ink/70" for="message">Bericht</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="mt-2 w-full resize-none rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                  placeholder="Waar kan ik je mee helpen?"
+                ></textarea>
+              </div>
+
+              <!-- Optional: redirect after submit -->
+              <input type="hidden" name="_redirect" value="https://praktijkinner.nl/thanks" />
+
+              <div class="pt-2">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center rounded-full bg-stone px-6 py-3 text-xs tracking-[0.14em] uppercase text-ink hover:brightness-95 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-taupe focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+                >
+                  Verstuur
+                </button>
+              </div>
+
+              <p class="text-xs text-ink/60">
+                Tip: vervang <span class="font-mono">YOUR_FORM_ID</span> door je Formspree ID.
+              </p>
+            </form>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <Footer />
+  </div>
+</BaseLayout>

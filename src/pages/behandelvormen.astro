@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
+
+const siteTitle = 'Onze behandelvormen — Praktijk Inner';
+const siteDescription =
+  'ACT, EMDR en CGT bij Praktijk Inner.';
+---
+
+<BaseLayout title={siteTitle} description={siteDescription}>
+  <div class="min-h-screen">
+    <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
+
+    <main class="py-16">
+      <Container>
+        <div class="mx-auto max-w-3xl">
+          <h1 class="font-serif text-5xl leading-tight">Onze behandelvormen</h1>
+
+          <p class="mt-6 text-lg leading-relaxed text-ink/70">
+            Bij Praktijk Inner zien we de vrouw achter de klacht. Een vrouw met kracht en kwetsbaarheid, met een verleden dat sporen nalaat en een heden dat soms zwaar voelt. Herstel begint bij aandacht: voor wat er nu is, voor overtuigingen die onderweg zijn gevormd en voor de keuzes die dagelijks gemaakt worden. Onze behandelvormen bieden richting. Ze zijn stevig onderbouwd en tegelijk uitnodigend tot persoonlijke groei en betekenis.
+          </p>
+        </div>
+      </Container>
+
+      <section class="py-14">
+        <Container>
+          <div class="mx-auto max-w-3xl space-y-14">
+            <article id="act">
+              <h2 class="font-serif text-3xl leading-snug">Acceptance and Commitment Therapy (ACT)</h2>
+
+              <p class="mt-4 leading-relaxed text-ink/70">
+                ACT helpt om op een nieuwe manier om te gaan met moeilijke gedachten en gevoelens. Niet door ze te onderdrukken, maar door ze te erkennen en tegelijk ruimte te maken voor wat er echt toe doet. De gedachte achter ACT is dat lijden vaak niet zozeer voortkomt uit de pijn zelf, maar uit de strijd daartegen. Wanneer die strijd afneemt, komt er ruimte vrij om te leven naar eigen waarden die je hart lichter maken.
+              </p>
+
+              <div class="mt-6 rounded-[32px] bg-white/60 p-6 shadow-soft ring-1 ring-taupe/15">
+                <p class="leading-relaxed text-ink/70">
+                  Voorbeeld: Een vrouw die van jongs af aan heeft geleerd dat alleen perfect goed genoeg is, voelt voortdurend druk om te presteren. In ACT leert zij de angst om te falen niet langer te bevechten maar te verdragen. Zo kan ze stap voor stap kiezen voor meer rust, meer aandacht voor datgene wat belangrijk voor haar is zoals zichzelf, haar dierbaren, haar werk en andere persoonlijke waarden.
+                </p>
+              </div>
+            </article>
+
+            <article id="emdr">
+              <h2 class="font-serif text-3xl leading-snug">Eye Movement Desensitization and Reprocessing (EMDR)</h2>
+
+              <p class="mt-4 leading-relaxed text-ink/70">
+                Soms blijft een ingrijpende gebeurtenis vastzitten, alsof die zich telkens opnieuw afspeelt. EMDR helpt de emotionele lading daarvan te verminderen. Tijdens de behandeling bootsen we de remslaap na, een fase van de slaap waarin de ogen snel heen en weer bewegen en het brein emoties verwerkt. Bij trauma verloopt die verwerking vaak niet goed. Door een herinnering op te roepen terwijl de ogen ritmisch bewegen, krijgt het brein alsnog de kans om het gebeuren op een andere manier te ordenen. De herinnering blijft, maar de heftigheid neemt af.
+              </p>
+
+              <div class="mt-6 rounded-[32px] bg-white/60 p-6 shadow-soft ring-1 ring-taupe/15">
+                <p class="leading-relaxed text-ink/70">
+                  Voorbeeld: Een vrouw die in haar jeugd geweld heeft meegemaakt, schrikt jaren later nog steeds hevig van een plotselinge stemverheffing. Tijdens EMDR gaat zij terug naar dat moment, terwijl haar ogen de bewegingen volgen. Langzaam verliest de herinnering haar scherpte, waardoor zij zich vrijer voelt in contact met anderen.
+                </p>
+              </div>
+            </article>
+
+            <article id="cgt">
+              <h2 class="font-serif text-3xl leading-snug">Cognitieve gedragstherapie (CGT)</h2>
+
+              <p class="mt-4 leading-relaxed text-ink/70">
+                Gedachten, gevoelens en gedragingen beïnvloeden elkaar voortdurend, als schakels in een keten. CGT maakt zichtbaar hoe de betekenis die we geven aan een gebeurtenis gevoelens oproept en hoe die gevoelens ons gedrag sturen. Dat gedrag kan verschillende vormen aannemen, zoals vermijden, pleasen, controleren, piekeren, overcompenseren of boos worden. Door deze cirkels te herkennen en stap voor stap te oefenen met anders denken en doen, ontstaat ruimte voor verandering. De gedachte hierachter is dat wie anders leert denken en handelen, zich ook anders kan gaan voelen. CGT is helder, praktisch en direct toepasbaar.
+              </p>
+
+              <div class="mt-6 rounded-[32px] bg-white/60 p-6 shadow-soft ring-1 ring-taupe/15">
+                <p class="leading-relaxed text-ink/70">
+                  Voorbeeld: Een vrouw die vaak denkt “Ik ben niet goed genoeg” voelt onzekerheid en trekt zich terug of werkt zich juist voorbij haar grenzen om zich te bewijzen. In CGT onderzoekt zij dit patroon en oefent zij met nieuwe gedachten, zoals “Ik mag leren en groeien net als ieder ander.” Daardoor kiest ze vaker gedrag dat past bij haar waarden, zoals contact zoeken of op tijd rust nemen, en groeit haar zelfvertrouwen.
+                </p>
+              </div>
+            </article>
+
+            <div class="pt-4">
+              <Button href="/contact" variant="solid">Kennismaking aanvragen</Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </main>
+
+    <Footer />
+  </div>
+</BaseLayout>

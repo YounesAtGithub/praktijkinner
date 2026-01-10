@@ -1,0 +1,25 @@
+---
+import Button from './Button.astro';
+
+const {
+  title,
+  body,
+  buttonLabel,
+  href = '#contact',
+  imageAlt = '',
+  imageSrc = '/images/circle-placeholder.svg',
+} = Astro.props;
+---
+
+<article class="text-center">
+  <div class="mx-auto mb-6 h-28 w-28 overflow-hidden rounded-full bg-white/70 shadow-soft ring-1 ring-taupe/20">
+    <img src={imageSrc} alt={imageAlt} class="h-full w-full object-cover" loading="lazy" />
+  </div>
+
+  <h3 class="font-serif text-2xl">{title}</h3>
+  <p class="mx-auto mt-3 max-w-xs text-sm leading-6 text-ink/70">{body}</p>
+
+  <div class="mt-6">
+    <Button href={href} variant="outline" size="sm">{buttonLabel}</Button>
+  </div>
+</article>

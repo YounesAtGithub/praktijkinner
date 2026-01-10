@@ -1,0 +1,60 @@
+---
+import Container from './Container.astro';
+import Button from './Button.astro';
+
+const {
+  brand = 'PRAKTIJK INNER',
+  ctaLabel = 'Boek een kennismaking',
+  ctaHref = '#contact',
+} = Astro.props;
+
+const nav = [
+  { label: 'Behandelvormen', href: '/behandelvormen' },
+  { label: 'Aanbod', href: '#aanbod' },
+  { label: 'Over mij', href: '#over' },
+  { label: 'Contact', href: '#contact' },
+  { label: 'Tarieven', href: '#tarieven' },
+];
+---
+
+<header class="pt-6">
+  <Container class="flex items-center justify-between gap-4">
+    <a href="#" class="font-serif text-lg tracking-[0.14em] uppercase">{brand}</a>
+
+    <nav class="hidden items-center gap-8 md:flex">
+      {nav.map((item) => (
+        <a href={item.href} class="text-sm text-ink/70 hover:text-ink transition">
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <Button href={ctaHref} variant="outline" size="sm" class="hidden sm:inline-flex">{ctaLabel}</Button>
+      <button
+        class="md:hidden rounded-full border border-taupe/40 px-4 py-2 text-xs tracking-[0.14em] uppercase"
+        aria-label="Open menu"
+        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+      >
+        Menu
+      </button>
+    </div>
+  </Container>
+
+  <div id="mobile-menu" class="hidden md:hidden">
+    <Container class="pt-4">
+      <div class="rounded-3xl border border-taupe/30 bg-white/40 backdrop-blur px-5 py-4">
+        <div class="flex flex-col gap-3">
+          {nav.map((item) => (
+            <a href={item.href} class="text-sm text-ink/80 hover:text-ink" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+              {item.label}
+            </a>
+          ))}
+          <div class="pt-2">
+            <Button href={ctaHref} variant="outline" size="sm">{ctaLabel}</Button>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </div>
+</header>

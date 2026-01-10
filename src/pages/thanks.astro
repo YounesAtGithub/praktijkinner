@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
+
+const siteTitle = 'Bedankt — Praktijk Inner';
+---
+
+<BaseLayout title={siteTitle}>
+  <Header brand="Praktijk Inner" ctaLabel="Terug naar home" ctaHref="/" />
+
+  <main class="py-24">
+    <Container>
+      <div class="mx-auto max-w-3xl rounded-[56px] bg-white/70 p-10 text-center shadow-soft ring-1 ring-taupe/15 sm:p-14">
+        <h1 class="font-serif text-5xl leading-tight">Bedankt</h1>
+        <p class="mt-4 text-ink/70">
+          Je bericht is verzonden. Je ontvangt binnen 1–2 werkdagen een reactie.
+        </p>
+        <div class="mt-8 flex justify-center">
+          <Button href="/" variant="outline">Terug naar home</Button>
+        </div>
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>

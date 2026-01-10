@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Footer from '../components/Footer.astro';
+
+const siteTitle = 'Contact — Praktijk Inner';
+---
+
+<BaseLayout title={siteTitle}>
+  <Header brand="Praktijk Inner" ctaLabel="Naar contact" ctaHref="#formulier" />
+
+  <main class="py-16">
+    <Container>
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div>
+          <h1 class="font-serif text-5xl leading-tight">Contact</h1>
+          <p class="mt-4 max-w-xl text-ink/70">
+            Dit is een losse contactpagina (handig voor SEO en voor mensen die direct willen mailen).
+            Het formulier werkt platform-onafhankelijk via Formspree.
+          </p>
+
+          <div class="mt-6 space-y-2 text-sm text-ink/70">
+            <p><span class="text-ink/90">E-mail:</span> info@praktijkinner.nl</p>
+            <p><span class="text-ink/90">Locatie:</span> Nederland (online mogelijk)</p>
+          </div>
+        </div>
+
+        <div id="formulier" class="rounded-[48px] bg-white/60 p-8 shadow-soft ring-1 ring-taupe/15 sm:p-10">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
+            <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+            <div>
+              <label class="text-sm text-ink/70" for="name">Naam</label>
+              <input
+                id="name"
+                name="name"
+                required
+                class="mt-2 w-full rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                placeholder="Jouw naam"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm text-ink/70" for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="mt-2 w-full rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                placeholder="naam@voorbeeld.nl"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm text-ink/70" for="message">Bericht</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="mt-2 w-full resize-none rounded-2xl border border-taupe/20 bg-paper/60 px-4 py-3 outline-none focus:ring-2 focus:ring-taupe/40"
+                placeholder="Waar kan ik je mee helpen?"
+              ></textarea>
+            </div>
+
+            <input type="hidden" name="_redirect" value="https://praktijkinner.nl/thanks" />
+
+            <div class="pt-2">
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-stone px-6 py-3 text-xs tracking-[0.14em] uppercase text-ink hover:brightness-95 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-taupe focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+              >
+                Verstuur
+              </button>
+            </div>
+
+            <p class="text-xs text-ink/60">
+              Vervang <span class="font-mono">YOUR_FORM_ID</span> door je Formspree ID.
+            </p>
+          </form>
+        </div>
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>

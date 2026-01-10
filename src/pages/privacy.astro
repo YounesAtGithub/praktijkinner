@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Footer from '../components/Footer.astro';
+
+const siteTitle = 'Privacy — Praktijk Inner';
+---
+
+<BaseLayout title={siteTitle}>
+  <Header brand="Praktijk Inner" ctaLabel="Contact" ctaHref="/contact" />
+
+  <main class="py-16">
+    <Container>
+      <h1 class="font-serif text-5xl leading-tight">Privacy</h1>
+      <p class="mt-4 max-w-3xl text-ink/70">
+        Plaats hier je privacyverklaring (AVG). Houd het simpel en helder: welke gegevens je verzamelt,
+        waarom, hoe lang, en hoe mensen contact opnemen voor inzage/verwijdering.
+      </p>
+
+      <div class="mt-10 max-w-3xl space-y-8">
+        <section>
+          <h2 class="font-serif text-2xl">Welke gegevens</h2>
+          <p class="mt-2 text-ink/70">Naam, e-mail en het bericht dat iemand invult in het contactformulier.</p>
+        </section>
+
+        <section>
+          <h2 class="font-serif text-2xl">Doel</h2>
+          <p class="mt-2 text-ink/70">Alleen om te reageren op contactaanvragen.</p>
+        </section>
+
+        <section>
+          <h2 class="font-serif text-2xl">Bewaartermijn</h2>
+          <p class="mt-2 text-ink/70">Vervang dit met je eigen beleid.</p>
+        </section>
+
+        <section>
+          <h2 class="font-serif text-2xl">Contact</h2>
+          <p class="mt-2 text-ink/70">info@praktijkinner.nl</p>
+        </section>
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>

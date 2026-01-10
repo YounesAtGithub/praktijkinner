@@ -1,0 +1,15 @@
+---
+import Container from './Container.astro';
+---
+
+<footer class="py-14">
+  <Container class="flex flex-col items-center justify-between gap-6 border-t border-taupe/20 pt-10 sm:flex-row">
+    <p class="text-sm text-ink/60">
+      © {new Date().getFullYear()} Praktijk Inner. Alle rechten voorbehouden.
+    </p>
+    <div class="flex items-center gap-6 text-sm text-ink/60">
+      <a href="/privacy" class="hover:text-ink">Privacy</a>
+      <a href="/contact" class="hover:text-ink">Contact</a>
+    </div>
+  </Container>
+</footer>

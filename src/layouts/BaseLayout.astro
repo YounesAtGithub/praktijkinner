@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Praktijk Inner',
+  description = 'Rust, helderheid en begeleiding. Een rustige, moderne praktijkwebsite met minimale functies.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.site?.toString() ?? 'https://praktijkinner.nl'} />
+    <meta property="og:image" content="/images/og-placeholder.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,23 @@
+---
+const {
+  href = '#',
+  variant = 'solid', // solid | outline | ghost
+  size = 'md', // sm | md
+  class: className = '',
+} = Astro.props;
+
+const base =
+  'inline-flex items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2 focus-visible:ring-taupe focus-visible:ring-offset-2 focus-visible:ring-offset-paper';
+const sizes = {
+  sm: 'px-4 py-2 text-xs tracking-[0.14em]',
+  md: 'px-6 py-3 text-xs tracking-[0.14em]',
+};
+const variants = {
+  solid: 'bg-stone text-ink hover:brightness-95',
+  outline: 'border border-taupe/50 text-ink hover:bg-stone/60',
+  ghost: 'text-ink hover:bg-stone/60',
+};
+---
+<a href={href} class={`${base} ${sizes[size]} ${variants[variant]} ${className} uppercase`}>
+  <slot />
+</a>
