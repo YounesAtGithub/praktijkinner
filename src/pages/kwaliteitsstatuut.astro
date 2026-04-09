@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Kwaliteitsstatuut — Praktijk Inner">
+  <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
+
+  <main class="py-16">
+    <Container>
+      <div class="mx-auto max-w-3xl">
+
+        <h1 class="font-serif text-5xl leading-tight">Kwaliteitsstatuut</h1>
+
+        <!-- Disclaimer -->
+        <div class="mt-6 rounded-2xl bg-yellow-50 p-5 ring-1 ring-yellow-200 text-sm text-yellow-900">
+          <strong>Let op:</strong> De inhoud van deze pagina is nog niet definitief en dient uitsluitend ter demonstratie.
+        </div>
+
+        <div class="mt-10 space-y-10 text-ink/80 leading-relaxed">
+
+          <section>
+            <h2 class="font-serif text-2xl">1. Inleiding</h2>
+            <p class="mt-4">
+              Deze pagina bevat het kwaliteitsstatuut van Praktijk Inner. Hierin wordt beschreven hoe de kwaliteit van zorg wordt geborgd.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-2xl">2. Visie op kwaliteit</h2>
+            <p class="mt-4">
+              Praktijk Inner streeft naar zorg die zorgvuldig, transparant en afgestemd is op de individuele cliënt.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-2xl">3. Deskundigheid</h2>
+            <p class="mt-4">
+              Behandelaren blijven zich ontwikkelen door scholing, supervisie en intervisie.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-2xl">4. Samenwerking</h2>
+            <p class="mt-4">
+              Waar nodig wordt samengewerkt met andere zorgverleners om optimale zorg te bieden.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-2xl">5. Evaluatie en verbetering</h2>
+            <p class="mt-4">
+              Praktijk Inner evalueert regelmatig de kwaliteit van zorg en voert verbeteringen door waar nodig.
+            </p>
+          </section>
+
+        </div>
+
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>
