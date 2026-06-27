@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Tarieven en vergoedingen — Praktijk Inner"
+  description="Informatie over tarieven, vergoedingen en particuliere behandelingen bij Praktijk Inner."
+>
+  <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
+
+  <main class="py-16">
+    <Container>
+      <div class="mx-auto max-w-3xl">
+
+        <p class="text-sm uppercase tracking-[0.25em] text-ink/50">
+          Tarieven
+        </p>
+
+        <h1 class="mt-4 font-serif text-5xl leading-tight">
+          Tarieven en vergoedingen
+        </h1>
+
+        <p class="mt-6 text-lg leading-relaxed text-ink/70">
+          Bij Praktijk Inner vinden we het belangrijk dat je vooraf duidelijkheid hebt over de kosten van een behandeling. Of jouw traject wordt vergoed, hangt af van de aard van je hulpvraag, de diagnose en jouw zorgverzekering.
+        </p>
+
+        <div class="mt-16 space-y-10">
+
+          <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
+            <h2 class="font-serif text-3xl leading-snug">
+              Vergoede zorg
+            </h2>
+
+            <p class="mt-5 leading-relaxed">
+              Wanneer er sprake is van een psychische aandoening die voldoet aan de criteria van de Diagnostic and Statistical Manual of Mental Disorders en je beschikt over een geldige verwijzing van de huisarts of een andere bevoegde verwijzer, kan de behandeling in aanmerking komen voor vergoeding vanuit de basisverzekering. De behandeling wordt dan gedeclareerd volgens de tarieven van het Zorgprestatiemodel (ZPM), zoals vastgesteld door de Nederlandse Zorgautoriteit (NZa).
+            </p>
+
+            <p class="mt-4 leading-relaxed">
+              Afhankelijk van jouw polis en de afspraken met jouw zorgverzekeraar kunnen de kosten geheel of gedeeltelijk worden vergoed. Houd er rekening mee dat het wettelijk eigen risico van toepassing kan zijn. We adviseren je daarom altijd vooraf contact op te nemen met jouw zorgverzekeraar om na te gaan welke vergoeding voor jouw situatie geldt.
+            </p>
+          </section>
+
+          <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+            <h2 class="font-serif text-3xl leading-snug">
+              Particuliere behandeling
+            </h2>
+
+            <p class="mt-5 leading-relaxed">
+              Niet iedere hulpvraag valt onder de verzekerde GGZ. Wanneer er geen sprake is van een vergoede DSM-5-diagnose, wanneer je geen verwijzing hebt of wanneer je liever buiten de zorgverzekering om behandeld wilt worden, kun je kiezen voor een particulier traject.
+            </p>
+
+            <div class="mt-8 rounded-[24px] bg-sand/60 p-6 ring-1 ring-taupe/15 text-center">
+              <p class="text-sm uppercase tracking-widest text-ink/50">
+                Tarief
+              </p>
+
+              <p class="mt-2 text-4xl font-serif">
+                € 130,-
+              </p>
+
+              <p class="mt-2 text-ink/70">
+                per sessie van 60 minuten
+              </p>
+            </div>
+
+            <p class="mt-8 leading-relaxed">
+              Dit tarief geldt voor individuele psychologische behandeling, systeemtherapie en relatietherapie, tenzij vooraf andere afspraken zijn gemaakt.
+            </p>
+
+            <p class="mt-4 leading-relaxed">
+              Een particulier traject biedt onder andere de mogelijkheid om zonder verwijzing te starten en voorkomt dat gegevens over de behandeling met de zorgverzekeraar worden gedeeld.
+            </p>
+          </section>
+
+          <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
+            <h2 class="font-serif text-3xl leading-snug">
+              Annuleren van een afspraak
+            </h2>
+
+            <p class="mt-5 leading-relaxed">
+              Ben je onverhoopt verhinderd? Laat het ons dan uiterlijk 24 uur vóór de afspraak weten. Zo kunnen wij de gereserveerde tijd beschikbaar stellen aan een andere cliënt.
+            </p>
+
+            <p class="mt-4 leading-relaxed">
+              Wanneer een afspraak minder dan 24 uur van tevoren wordt geannuleerd of wanneer je zonder bericht niet verschijnt, zijn wij helaas genoodzaakt de kosten van de gereserveerde sessie in rekening te brengen. Deze kosten worden niet vergoed door de zorgverzekeraar.
+            </p>
+          </section>
+
+          <section class="rounded-[32px] bg-ink p-7 text-white shadow-soft">
+            <h2 class="font-serif text-3xl leading-snug">
+              Vragen?
+            </h2>
+
+            <p class="mt-5 leading-relaxed text-white/80">
+              Heb je vragen over tarieven, vergoedingen of de mogelijkheden binnen jouw situatie? We denken graag met je mee en geven je vooraf duidelijkheid, zodat je weet waar je aan toe bent.
+            </p>
+
+            <div class="mt-8">
+              <Button href="/contact" variant="light">
+                Neem contact op
+              </Button>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>
+```
