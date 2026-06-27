@@ -8,85 +8,139 @@ import Footer from '../components/Footer.astro';
 
 <BaseLayout
   title="Voor wie — Praktijk Inner"
-  description="Wanneer de zorg van Praktijk Inner mogelijk niet passend is."
+  description="Voor wie is Praktijk Inner bedoeld? Lees voor welke hulpvragen en behandelvormen je bij ons terecht kunt."
 >
   <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
 
-  <main class="py-16">
-    <Container>
-      <div class="mx-auto max-w-3xl">
-        <p class="text-sm uppercase tracking-[0.25em] text-ink/50">
-          Voor wie
-        </p>
-
-        <h1 class="mt-4 font-serif text-5xl leading-tight">
-          Wanneer onze zorg mogelijk niet passend is
-        </h1>
-
-        <p class="mt-6 text-lg leading-relaxed text-ink/70">
-          Bij Praktijk Inner vinden we het belangrijk dat iedere cliënt de zorg ontvangt die werkelijk aansluit bij haar behoeften en de complexiteit van haar hulpvraag.
-        </p>
-      </div>
-
-      <div class="mx-auto mt-12 max-w-3xl space-y-8 text-ink/80 leading-relaxed">
-        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
-          <p>
-            Daarom kijken we tijdens de aanmelding en intake niet alleen naar de klachten waarmee iemand zich meldt, maar ook naar wat er nodig is om veiligheid, stabiliteit en duurzame verandering te kunnen bieden.
+  <main>
+    <section class="py-16 md:py-24">
+      <Container>
+        <div class="mx-auto max-w-3xl">
+          <p class="text-sm font-medium uppercase tracking-[0.2em] text-ink/50">
+            Voor wie
           </p>
 
-          <p class="mt-4">
-            Soms merken we dat een monodisciplinaire behandeling binnen onze praktijk op dat moment niet voldoende aansluit. In zulke situaties vraagt de problematiek vaak om intensievere, multidisciplinaire of meer specialistische zorg.
+          <h1 class="mt-4 font-serif text-5xl leading-tight md:text-6xl">
+            Voor wie is Praktijk Inner?
+          </h1>
+
+          <p class="mt-6 text-lg leading-relaxed text-ink/70">
+            Bij Praktijk Inner begeleiden we (jong)volwassenen, stellen, gezinnen en families die vastlopen door psychische klachten, ingrijpende gebeurtenissen of terugkerende patronen in zichzelf of in hun relaties.
           </p>
 
-          <p class="mt-4">
-            Vanuit onze professionele verantwoordelijkheid onderzoeken we dan samen met de huisarts, verwijzer of andere betrokken behandelaren welke vorm van zorg het meest passend is. Waar mogelijk denken we mee in samenwerking of verwijzen we door naar een organisatie die beter kan aansluiten bij de zorgbehoefte.
-          </p>
-        </section>
-
-        <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
-          <h2 class="font-serif text-3xl leading-snug">
-            Dit kan bijvoorbeeld het geval zijn wanneer er sprake is van:
-          </h2>
-
-          <ul class="mt-6 space-y-3">
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>ernstige verslavingsproblematiek</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>ernstige suïcidaliteit, automutilatie of acute veiligheidsrisico’s</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>psychotische klachten, zoals Psychose, Schizofrenie, wanen of hallucinaties</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>acute crisisproblematiek of de noodzaak voor crisishulp</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>ernstige Eetstoornis</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
-              <span>complexe of ernstige persoonlijkheidsproblematiek</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
-          <p class="text-lg leading-relaxed text-ink/75">
-            Ons uitgangspunt blijft altijd hetzelfde: samen kijken naar wat nodig is, zodat iemand de juiste zorg op de juiste plek ontvangt.
-          </p>
-
-          <div class="mt-6">
-            <Button href="/contact" variant="solid">Neem contact op</Button>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <Button href="/contact" variant="solid">Kennismaking aanvragen</Button>
+            <Button href="/aanbod" variant="ghost">Bekijk het aanbod</Button>
           </div>
-        </section>
-      </div>
-    </Container>
+        </div>
+      </Container>
+    </section>
+
+    <section class="pb-16">
+      <Container>
+        <div class="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1fr_2fr]">
+          <aside class="rounded-[32px] bg-white/60 p-6 shadow-soft ring-1 ring-taupe/15 lg:sticky lg:top-8 lg:self-start">
+            <h2 class="font-serif text-2xl">In het kort</h2>
+
+            <ul class="mt-5 space-y-3 text-sm leading-relaxed text-ink/70">
+              <li>• Individuele psychologische behandeling</li>
+              <li>• Systeemtherapie</li>
+              <li>• Relatietherapie</li>
+              <li>• Generalistische basis GGZ</li>
+              <li>• Monodisciplinaire specialistische GGZ</li>
+              <li>• Particuliere begeleiding</li>
+            </ul>
+          </aside>
+
+          <div class="space-y-12 text-ink/80">
+            <section class="rounded-[36px] bg-white/55 p-7 shadow-soft ring-1 ring-taupe/15 md:p-10">
+              <h2 class="font-serif text-3xl leading-snug">Hulp bij klachten en patronen</h2>
+
+              <div class="mt-5 space-y-5 leading-relaxed text-ink/70">
+                <p>
+                  Soms ligt de hulpvraag vooral bij het individu, bijvoorbeeld wanneer iemand last heeft van angst, somberheid of trauma. In andere situaties spelen juist de interacties binnen een relatie, gezin of familie een belangrijke rol. Daarom bieden wij zowel individuele psychologische behandeling als systeemtherapie en relatietherapie.
+                </p>
+
+                <p>
+                  In onze praktijk kijken we naar de mens als geheel. We hebben aandacht voor wie iemand is, welke ervaringen haar hebben gevormd en hoe haar omgeving van invloed is op haar welzijn.
+                </p>
+
+                <p>
+                  Afhankelijk van de hulpvraag richten we ons op het individu, op de relatie of op het gezin als geheel. Soms is een individuele behandeling het meest passend, soms biedt het betrekken van een partner of gezinsleden juist meer ruimte voor blijvende verandering.
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded-[36px] bg-white/55 p-7 shadow-soft ring-1 ring-taupe/15 md:p-10">
+              <h2 class="font-serif text-3xl leading-snug">Welke vorm van behandeling past?</h2>
+
+              <div class="mt-5 space-y-5 leading-relaxed text-ink/70">
+                <p>
+                  Binnen onze praktijk bieden we generalistische basis GGZ, monodisciplinaire specialistische GGZ, systeemtherapie, relatietherapie en particuliere begeleiding.
+                </p>
+
+                <p>
+                  Welke vorm van behandeling het beste aansluit, bepalen we samen tijdens de intake, waarbij we zorgvuldig kijken naar jouw hulpvraag, doelen en de zorg die nodig is.
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded-[36px] bg-white/55 p-7 shadow-soft ring-1 ring-taupe/15 md:p-10">
+              <h2 class="font-serif text-3xl leading-snug">
+                Wanneer onze zorg mogelijk niet passend is
+              </h2>
+
+              <div class="mt-5 space-y-5 leading-relaxed text-ink/70">
+                <p>
+                  Bij Praktijk Inner vinden we het belangrijk dat iedere cliënt de zorg ontvangt die werkelijk aansluit bij haar behoeften en de complexiteit van haar hulpvraag. Daarom kijken we tijdens de aanmelding en intake niet alleen naar de klachten waarmee iemand zich meldt, maar ook naar wat er nodig is om veiligheid, stabiliteit en duurzame verandering te kunnen bieden.
+                </p>
+
+                <p>
+                  Soms merken we dat een monodisciplinaire behandeling binnen onze praktijk op dat moment niet voldoende aansluit. In zulke situaties vraagt de problematiek vaak om intensievere, multidisciplinaire of meer specialistische zorg. Vanuit onze professionele verantwoordelijkheid onderzoeken we dan samen met de huisarts, verwijzer of andere betrokken behandelaren welke vorm van zorg het meest passend is.
+                </p>
+
+                <p>
+                  Waar mogelijk denken we mee in samenwerking of verwijzen we door naar een organisatie die beter kan aansluiten bij de zorgbehoefte.
+                </p>
+
+                <div class="rounded-[28px] bg-warm p-6">
+                  <p>
+                    Dit kan bijvoorbeeld het geval zijn wanneer er sprake is van:
+                  </p>
+
+                  <ul class="mt-4 list-disc space-y-2 pl-5">
+                    <li>ernstige verslavingsproblematiek</li>
+                    <li>ernstige suïcidaliteit, automutilatie of acute veiligheidsrisico’s</li>
+                    <li>psychotische klachten, zoals Psychose, Schizofrenie, wanen of hallucinaties</li>
+                    <li>acute crisisproblematiek of de noodzaak voor crisishulp</li>
+                    <li>ernstige Eetstoornis</li>
+                    <li>complexe of ernstige persoonlijkheidsproblematiek</li>
+                  </ul>
+                </div>
+
+                <p>
+                  Ons uitgangspunt blijft altijd hetzelfde: samen kijken naar wat nodig is, zodat iemand de juiste zorg op de juiste plek ontvangt.
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded-[36px] bg-ink p-7 text-white shadow-soft md:p-10">
+              <h2 class="font-serif text-3xl leading-snug">
+                Wil je weten of Praktijk Inner passend is?
+              </h2>
+
+              <p class="mt-5 leading-relaxed text-white/75">
+                Neem contact op voor een kennismaking. Dan kijken we samen welke zorg aansluit bij jouw situatie.
+              </p>
+
+              <div class="mt-7">
+                <Button href="/contact" variant="light">Contact opnemen</Button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </Container>
+    </section>
   </main>
 
   <Footer />
