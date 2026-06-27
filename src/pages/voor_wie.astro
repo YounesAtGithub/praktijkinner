@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Voor wie — Praktijk Inner"
+  description="Wanneer de zorg van Praktijk Inner mogelijk niet passend is."
+>
+  <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
+
+  <main class="py-16">
+    <Container>
+      <div class="mx-auto max-w-3xl">
+        <p class="text-sm uppercase tracking-[0.25em] text-ink/50">
+          Voor wie
+        </p>
+
+        <h1 class="mt-4 font-serif text-5xl leading-tight">
+          Wanneer onze zorg mogelijk niet passend is
+        </h1>
+
+        <p class="mt-6 text-lg leading-relaxed text-ink/70">
+          Bij Praktijk Inner vinden we het belangrijk dat iedere cliënt de zorg ontvangt die werkelijk aansluit bij haar behoeften en de complexiteit van haar hulpvraag.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-3xl space-y-8 text-ink/80 leading-relaxed">
+        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+          <p>
+            Daarom kijken we tijdens de aanmelding en intake niet alleen naar de klachten waarmee iemand zich meldt, maar ook naar wat er nodig is om veiligheid, stabiliteit en duurzame verandering te kunnen bieden.
+          </p>
+
+          <p class="mt-4">
+            Soms merken we dat een monodisciplinaire behandeling binnen onze praktijk op dat moment niet voldoende aansluit. In zulke situaties vraagt de problematiek vaak om intensievere, multidisciplinaire of meer specialistische zorg.
+          </p>
+
+          <p class="mt-4">
+            Vanuit onze professionele verantwoordelijkheid onderzoeken we dan samen met de huisarts, verwijzer of andere betrokken behandelaren welke vorm van zorg het meest passend is. Waar mogelijk denken we mee in samenwerking of verwijzen we door naar een organisatie die beter kan aansluiten bij de zorgbehoefte.
+          </p>
+        </section>
+
+        <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
+          <h2 class="font-serif text-3xl leading-snug">
+            Dit kan bijvoorbeeld het geval zijn wanneer er sprake is van:
+          </h2>
+
+          <ul class="mt-6 space-y-3">
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>ernstige verslavingsproblematiek</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>ernstige suïcidaliteit, automutilatie of acute veiligheidsrisico’s</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>psychotische klachten, zoals Psychose, Schizofrenie, wanen of hallucinaties</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>acute crisisproblematiek of de noodzaak voor crisishulp</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>ernstige Eetstoornis</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2 h-2 w-2 flex-none rounded-full bg-ink/40"></span>
+              <span>complexe of ernstige persoonlijkheidsproblematiek</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+          <p class="text-lg leading-relaxed text-ink/75">
+            Ons uitgangspunt blijft altijd hetzelfde: samen kijken naar wat nodig is, zodat iemand de juiste zorg op de juiste plek ontvangt.
+          </p>
+
+          <div class="mt-6">
+            <Button href="/contact" variant="solid">Neem contact op</Button>
+          </div>
+        </section>
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>

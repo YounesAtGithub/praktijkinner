@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Ons verhaal — Praktijk Inner"
+  description="Het verhaal achter Praktijk Inner en de inspiratie om vrouwen centraal te zetten in therapie."
+>
+  <Header brand="Praktijk Inner" ctaLabel="Kennismaken" ctaHref="/contact" />
+
+  <main class="py-16">
+    <Container>
+      <div class="mx-auto max-w-3xl">
+        <p class="text-sm uppercase tracking-[0.25em] text-ink/50">
+          Praktijk Inner
+        </p>
+
+        <h1 class="mt-4 font-serif text-5xl leading-tight">
+          Ons verhaal
+        </h1>
+
+        <p class="mt-6 text-lg leading-relaxed text-ink/70">
+          Het moment dat we besloten om samen een praktijk te starten, was eigenlijk heel eenvoudig en tegelijk onvergetelijk.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-3xl space-y-8 text-ink/80 leading-relaxed">
+        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+          <p>
+            Het ontstond tijdens een gesprek waarin we onze dromen en ideeën naast elkaar legden. Er viel een stilte, gevolgd door een lach, en toen wisten we: dit is het, dit gaan we doen.
+          </p>
+
+          <p class="mt-4">
+            De emoties waren een mix van vreugde en spanning maar vooral een diep gevoel van vertrouwen. De woorden die we toen uitspraken: “we durven dit, samen” dragen we nog steeds met ons mee.
+          </p>
+        </section>
+
+        <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
+          <h2 class="font-serif text-3xl leading-snug">
+            Inspiratiebron
+          </h2>
+
+          <p class="mt-5">
+            Onze inspiratie om de vrouw centraal te zetten in therapie komt zowel uit ons werk als uit ons persoonlijke leven.
+          </p>
+
+          <p class="mt-4">
+            We hebben talloze vrouwen ontmoet; cliënten, collega’s, vriendinnen, moeders, zussen, keer op keer lieten ze zien hoeveel kracht en veerkracht er schuilgaat in hun verhalen.
+          </p>
+
+          <p class="mt-4">
+            Tegelijk zagen we hoe vaak vrouwen zichzelf naar de achtergrond schuiven, terwijl juist hun stem zo veel betekent voor het gezin, de relatie en de gemeenschap. Dat gaf ons het verlangen om ruimte te maken waar vrouwen zichzelf wél centraal mogen stellen.
+          </p>
+        </section>
+
+        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+          <h2 class="font-serif text-3xl leading-snug">
+            Het gezamenlijke pad
+          </h2>
+
+          <p class="mt-5">
+            Onze samenwerking groeide stap voor stap. Twee verschillende karakters maar juist hierin vonden we onze kracht.
+          </p>
+
+          <p class="mt-4">
+            De een creatief met een visie en nieuwe ideeën, de ander meer gestructureerd en bewaakt de rust. We houden elkaar een spiegel voor door eerlijk te benoemen wat de ander nog niet wilde zien en soms juist door iets positiefs uit te vergroten.
+          </p>
+
+          <p class="mt-4">
+            Dat heeft ons geleerd hoe belangrijk het is om jezelf kwetsbaar te durven tonen. In de behandelkamer zien we die spiegel dagelijks terug: we nodigen vrouwen en hun partners of gezinnen uit om stil te staan bij wat er speelt, zodat ze zichzelf én elkaar beter leren begrijpen.
+          </p>
+        </section>
+
+        <section class="rounded-[32px] bg-sand/60 p-7 ring-1 ring-taupe/15">
+          <h2 class="font-serif text-3xl leading-snug">
+            Toekomst en droom
+          </h2>
+
+          <p class="mt-5">
+            Als we vooruitkijken naar de toekomst van Praktijk Inner, zien we een plek die nog meer vrouwen en gezinnen bereikt.
+          </p>
+
+          <p class="mt-4">
+            Een praktijk waar verhalen gehoord worden, waar ruimte is voor emoties én voor verandering, en waar de kracht van verbinding centraal staat.
+          </p>
+
+          <div class="mt-6 rounded-[24px] bg-white/60 p-5 ring-1 ring-taupe/15">
+            <p class="font-serif text-2xl leading-snug text-ink/80">
+              “Door dit traject heb ik mezelf hervonden en bloeit mijn relatie en gezin weer op.”
+            </p>
+          </div>
+        </section>
+
+        <section class="rounded-[32px] bg-white/60 p-7 shadow-soft ring-1 ring-taupe/15">
+          <h2 class="font-serif text-3xl leading-snug">
+            Kennismaken?
+          </h2>
+
+          <p class="mt-5">
+            Wil je weten of Praktijk Inner aansluit bij jouw situatie? Neem gerust contact op.
+          </p>
+
+          <div class="mt-6">
+            <Button href="/contact" variant="solid">Neem contact op</Button>
+          </div>
+        </section>
+      </div>
+    </Container>
+  </main>
+
+  <Footer />
+</BaseLayout>
