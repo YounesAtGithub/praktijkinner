@@ -13,18 +13,42 @@ const siteTitle = 'Contact — Praktijk Inner';
   <main class="py-16">
     <Container>
       <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
-        <div>
-          <h1 class="font-serif text-5xl leading-tight">Contact</h1>
-          <p class="mt-4 max-w-xl text-ink/70">
-            Dit is een losse contactpagina (handig voor SEO en voor mensen die direct willen mailen).
-            Het formulier werkt platform-onafhankelijk via Formspree.
-          </p>
+<div>
 
-          <div class="mt-6 space-y-2 text-sm text-ink/70">
-            <p><span class="text-ink/90">E-mail:</span> info@praktijkinner.nl</p>
-            <p><span class="text-ink/90">Locatie:</span> Nederland (online mogelijk)</p>
-          </div>
-        </div>
+
+  <h1 class="mt-4 font-serif text-5xl leading-tight">
+    Contact
+  </h1>
+
+  <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink/70">
+    Heb je een vraag over onze behandelingen, wil je weten welke vorm van begeleiding het beste bij jouw hulpvraag past of wil je je aanmelden? We denken graag met je mee.
+  </p>
+
+  <p class="mt-4 max-w-xl leading-relaxed text-ink/70">
+    Je kunt contact met ons opnemen via e-mail of het contactformulier op onze website. We streven ernaar om je bericht binnen twee werkdagen te beantwoorden.
+  </p>
+
+  <div class="mt-8 space-y-6 text-sm text-ink/70">
+    <div>
+      <h2 class="font-serif text-2xl text-ink">E-mail</h2>
+      <p class="mt-2">
+        <a href="mailto:info@praktijkinner.nl" class="hover:text-ink underline">
+          info@praktijkinner.nl
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-serif text-2xl text-ink">Locatie</h2>
+      <p class="mt-2 leading-relaxed">
+        Praktijk Inner biedt behandelingen op locatie en online via een beveiligde beeldbelverbinding. Zo kun je kiezen voor de vorm die het beste aansluit bij jouw situatie.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
 
         <div id="formulier" class="rounded-[48px] bg-white/60 p-8 shadow-soft ring-1 ring-taupe/15 sm:p-10">
           <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
@@ -76,9 +100,7 @@ const siteTitle = 'Contact — Praktijk Inner';
               </button>
             </div>
 
-            <p class="text-xs text-ink/60">
-              Vervang <span class="font-mono">YOUR_FORM_ID</span> door je Formspree ID.
-            </p>
+
           </form>
         </div>
       </div>
